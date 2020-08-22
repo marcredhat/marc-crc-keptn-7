@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: unleash-db
+spec:
+  gateways:
+  - public-gateway.istio-system
+  - mesh
+  hosts:
+  - unleash-db.marc-crc-keptn-7-dev.svc.cluster.local
+  - unleash-db
+  http:
+  - route:
+    - destination:
+        host: unleash-db.marc-crc-keptn-7-dev.svc.cluster.local
