@@ -2,6 +2,8 @@ carts:
   enabled: false
 carts-generated:
   enabled: false
+unleash:
+  enabled: false
 unleash-db:
   enabled: false
 unleash-db-generated:
